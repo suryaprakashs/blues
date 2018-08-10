@@ -1,0 +1,18 @@
+﻿<Window x:Class="SimpleMan.Blues.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleMan.Blues"
+        mc:Ignorable="d"
+        Icon="Blues.ico"
+        Title="SimpleMan" Height="300" Width="480">
+    <Grid>
+        <DataGrid Name="SysActions" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserSortColumns="False" IsReadOnly="True" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="System Action" Binding="{Binding CurrentAction}" Width="*" />
+                <DataGridTextColumn Header="Time" Binding="{Binding ActionTime}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
